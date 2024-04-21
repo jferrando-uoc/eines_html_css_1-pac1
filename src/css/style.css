@@ -163,7 +163,7 @@ footer {
     .detall {
         display: grid;
         grid-template-columns: 400px 1fr;
-        column-gap: 1rem;
+        gap: 1rem;
     }
 
     .detall h2 {
@@ -172,5 +172,9 @@ footer {
 
     .detall h3 {
         margin-top: 0;
+    }
+
+    .descripcio {
+        grid-column: 1/-1;
     }
 }
