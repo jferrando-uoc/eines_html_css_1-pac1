@@ -10,7 +10,7 @@
 /* GENERAL */
 
 .wrapper {
-    max-width: 1000px;
+    max-width: 90%;
     margin: 0 auto;
 }
 
@@ -25,6 +25,9 @@ header .wrapper {
     justify-content: center;
 }
 
+header img {
+    max-width: 100%;
+}
 /* NAV */
 nav {
     background-color: black;
@@ -75,18 +78,61 @@ nav li {
 main h2 {
     font-size: 3rem;
     margin: 1rem 0;
+    text-align: center;
 }
 
 main p {
     margin: 1rem 0;
+    line-height: 1.5rem;
+}
+
+main a {
+    text-decoration: none;
+    color: #CC2B70;
 }
 
 .imatge-portada {
     display: block;
     margin: 0 auto;
+    max-width: 100%;
+}
+
+.discografia {
+    display: grid;
+    gap: 2rem;
+    justify-items: center;
+}
+
+.disc {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.disc img {
+    width: 400px;
+}
+
+.detall h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.detall img {
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+.detall ol {
+    list-style-position: inside;
 }
 
 /* NAVEGA DISCOGRAFIA */
+
+.navega-discografia {
+    margin-top: 1rem;
+}
 
 .navega-discografia .wrapper {
     display: flex;
@@ -98,4 +144,33 @@ footer {
     background-color: black;
     color: white;
     padding: 20px;
+    margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        max-width: 1000px;
+    }
+
+    main h2 {
+        text-align: left;
+    }
+
+    .discografia {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .detall {
+        display: grid;
+        grid-template-columns: 400px 1fr;
+        column-gap: 1rem;
+    }
+
+    .detall h2 {
+        grid-column: 1/-1;
+    }
+
+    .detall h3 {
+        margin-top: 0;
+    }
 }
