@@ -145,8 +145,15 @@ footer {
     color: white;
     padding: 20px;
     margin-top: 2rem;
+    padding: 1rem 0;
 }
 
+footer p:first-of-type {
+    margin-bottom: 1rem;
+}
+
+
+/* RESPONSIVE */
 @media (min-width: 768px) {
     .wrapper {
         max-width: 1000px;
