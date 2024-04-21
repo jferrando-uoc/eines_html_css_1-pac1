@@ -1,7 +1,7 @@
 {
-  "name": "proves",
+  "name": "pearljam",
   "version": "1.0.0",
-  "description": "proves amb npm",
+  "description": "Pàgina per la PAC 1 de l'assignatura Eines HTML i CSS 1",
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {

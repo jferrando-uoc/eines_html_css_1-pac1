@@ -1,9 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Schibsted Grotesk';
 }
 
+/* GENERAL */
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* HEADER */
 header {
     background-color: #CC2B70;
+    padding: 20px;
+}
+
+header .wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+/* NAV */
+nav {
+    background-color: black;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.8rem;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    padding: 1rem;
+}
+
+nav a:hover {
+    background-color: #CC2B70;
+}
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav li {
+    flex-grow: 1;
+}
+
+.categories {
+    position: relative;
+}
+.submenu {
+    display: none;
+    background-color: black;
+
+}
+
+.categories:hover .submenu {
+    display: block;
+    position: absolute;
+    right: 0;
+}
+
+/* MAIN */
+main h2 {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+main p {
+    margin: 1rem 0;
+}
+
+.imatge-portada {
+    display: block;
+    margin: 0 auto;
+}
+
+/* NAVEGA DISCOGRAFIA */
+
+.navega-discografia .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* FOOTER */
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
 }

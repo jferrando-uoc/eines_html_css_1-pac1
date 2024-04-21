@@ -7,30 +7,12 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div class="wrapper">
-            <img src="img/PJTITRE.svg" alt="Logo Pearl Jam">
-        </div>
-    </header>
-    <nav>
-        <div class="wrapper">
-            <ul>
-                <li><a href="index.html">Portada</a></li>
-                <li>Categories
-                    <ul>
-                        <li><a href="historia.html">Història</a></li>
-                        <li><a href="discografia.html">Discografia</a></li>
-                    </ul>
-                </li>
-                <li><a href="detall.html">Detall</a></li>
-                <li><a href="presentacio.html">Presentació</a></li>
-                <li><a href="enllasos.html">Enllaços</a></li>
-            </ul>
-        </div>
-    </nav>
+    <include src="header.html"></include>
+    <include src="nav.html"></include>
     <main>
         <div class="wrapper">
-            <h2>Sobre Pearl Jam</h2>
+            <h2>La banda</h2>
+            <img src="img/PearlJamBécs2006.jpg" alt="banda" class="imatge-portada">
             <p>Pearl Jam és un grup de grunge format a Seattle, Estats Units, l'any 1990, amb integrants de les bandes Mother Love Bone i Temple of the Dog.</p>
             <p>Amb l'edició del seu àlbum debut Ten el 1991, Pearl Jam irrompia amb força en l'àmbit musical alternatiu. Al costat de Nirvana, Alice in Chains, Stone Temple Pilots i Soundgarden estan considerats com una de les bandes més grans i influents de tota l'escena del moviment Grunge. Els seus membres fundadors i que encara segueixen al grup són Eddie Vedder (veu), Mike McCready (guitarra principal), Stone Gossard (guitarra rítmica), Jeff Ament (baix) i Matt Cameron (bateria).</p>
             <p>Tot i ser reconeguts com un dels grups més importants i influents del grunge, Pearl Jam sempre va destacar per un rock amb tocs més melòdics i influències de grups de rock dels anys 1960 i 70 com The Who, Led Zeppelin o The Doors. Els seus membres sempre s'han caracteritzat pel seu rebuig a determinades pràctiques comunes a la indústria musical, com per exemple la realització de vídeos promocionals; també és conegut el seu boicot a l'empresa Ticketmaster. La revista Rolling Stone els va descriure el 2006 com un grup que "es va passar la major part de la dècada passada destruint la seva pròpia fama".</p>
@@ -38,10 +20,6 @@
             <p>El grup estava originalment compost per Stone Gossard (guitarra rítmica), Jeff Ament (baix), Mike McCready (guitarra principal), Eddie Vedder (veu) i Dave Krusen (bateria). El baterista en la formació actual és Matt Cameron, membre a la vegada de Soundgarden, que pertany al grup des de 1998.</p>
         </div>
     </main>
-    <footer>
-        <div class="wrapper">
-            <p>footer</p>
-        </div>
-    </footer>
+    <include src="footer.html"></include>
 </body>
 </html>
