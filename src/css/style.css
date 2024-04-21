@@ -91,6 +91,11 @@ main a {
     color: #CC2B70;
 }
 
+main iframe {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
 .imatge-portada {
     display: block;
     margin: 0 auto;
@@ -124,7 +129,7 @@ main a {
     margin: 0 auto;
 }
 
-.detall ol {
+.detall ol, main ul {
     list-style-position: inside;
 }
 
