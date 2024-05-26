@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
 
+@font-face {
+    font-family: Impact;
+    src: url(../fonts/Impact.ttf);
+  }
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -23,11 +28,30 @@ header {
 header .wrapper {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-header img {
-    max-width: 100%;
+header a {
+    text-decoration: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1vw;
 }
+header img {
+    height: 10vh;
+}
+
+header h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-size: 10vw;
+    font-weight: 900;
+}
+ 
+/* header img {
+    max-width: 100%;
+} */
 /* NAV */
 nav {
     background-color: black;
@@ -158,10 +182,40 @@ footer {
     padding: 1rem 0;
 }
 
-footer p:first-of-type {
+/* footer p:first-of-type {
     margin-bottom: 1rem;
+} */
+
+footer .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
+.logo-footer {
+    max-width: 100px;
+}
+.logo-footer img {
+    max-width: 100%;
+}
+
+.links-footer {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.links-footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.links-footer a:hover {
+    color: #CC2B70;
+}
 
 /* RESPONSIVE */
 @media (min-width: 768px) {
@@ -209,5 +263,11 @@ footer p:first-of-type {
 
     .descripcio {
         grid-column: 1/-1;
+    }
+
+    .links-footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
     }
 }
