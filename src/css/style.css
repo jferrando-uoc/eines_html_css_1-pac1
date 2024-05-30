@@ -124,6 +124,7 @@ main iframe {
     display: block;
     margin: 0 auto;
     max-width: 100%;
+    clip-path: inset(5% 20% 15% 10% round 5% 20% 0 10%);
 }
 
 .discografia {
