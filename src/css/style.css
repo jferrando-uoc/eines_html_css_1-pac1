@@ -29,29 +29,33 @@ header .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 10vw;
+    max-height: 100px;
 }
 
 header a {
     text-decoration: none;
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
     gap: 1vw;
 }
 header img {
-    height: 10vh;
+    height: calc(1.5rem + 4vw);;
+    max-height: 100px;
+    width: auto;
+    vertical-align: middle;
 }
 
 header h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
-    font-size: 10vw;
-    font-weight: 900;
+    font-size: calc(1.5rem + 4vw);
+    line-height: 1;
+    max-height: 100;
+    display: flex;
+    align-items: center;
 }
- 
-/* header img {
-    max-width: 100%;
-} */
+
 /* NAV */
 nav {
     background-color: black;
