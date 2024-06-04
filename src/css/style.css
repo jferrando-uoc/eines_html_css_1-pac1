@@ -140,7 +140,7 @@ main iframe {
 }
 
 .disc img {
-    width: 400px;
+    max-width: 100%;;
 }
 
 .detall h3 {
@@ -149,7 +149,6 @@ main iframe {
 }
 
 img.portada {
-    /* width: 400px; */
     max-width: 100%;
     display: block;
     margin: 0 auto;
