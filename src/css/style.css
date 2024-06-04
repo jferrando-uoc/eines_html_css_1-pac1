@@ -124,7 +124,7 @@ main iframe {
     display: block;
     margin: 0 auto;
     max-width: 100%;
-    clip-path: inset(5% 20% 15% 10% round 5% 20% 0 10%);
+    clip-path: inset(8% 5% 5% 4% round 5% 20% 0 10%);
 }
 
 .discografia {
@@ -149,7 +149,8 @@ main iframe {
 }
 
 img.portada {
-    width: 400px;
+    /* width: 400px; */
+    max-width: 100%;
     display: block;
     margin: 0 auto;
 }
