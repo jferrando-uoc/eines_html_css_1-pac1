@@ -148,14 +148,36 @@ main iframe {
     margin-bottom: 1rem;
 }
 
-.detall img {
+img.portada {
     width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+.detall img {
+    max-width: 100%;
     display: block;
     margin: 0 auto;
 }
 
 .detall ol, main ul {
     list-style-position: inside;
+}
+
+/* PRESENTACIÓ - ANIMACIÓ IMATGE*/
+@keyframes rotacio {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.animacio {
+    animation: rotacio 5s linear infinite;
+    max-width: 10vw;
+    display: block;
+    margin: 0 auto;
 }
 
 /* NAVEGA DISCOGRAFIA */
@@ -248,7 +270,11 @@ footer .wrapper {
     }
 
     .discografia {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .discografia .disc img {
+        max-width: 100%;
     }
 
     .detall {
