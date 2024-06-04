@@ -8,5 +8,9 @@
     },
     "png": {
       "palette": true
+    },
+    "avif": {
+      "quality": 80,
+      "lossless": true
     }
   }
